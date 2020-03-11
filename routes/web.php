@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','WebController@home');
+Route::get('/shop','WebController@shop');
+Route::get('/product-details','WebController@productDetail');
+Route::get('/cart','WebController@cart');
+Route::get('/checkout','WebController@checkout');
